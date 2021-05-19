@@ -3,21 +3,41 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="m-5">
+      <div className="input-group mb-3">
+  <span className="input-group-text" id="basic-addon1">@</span>
+  <input type="text" className="form-control" placeholder="Username" aria-label="Username"
+    aria-describedby="basic-addon1" />
+</div>
+
+<div className="input-group mb-3">
+  <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+    aria-describedby="basic-addon2" />
+  <span className="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<label for="basic-url" className="form-label">Your vanity URL</label>
+<div className="input-group mb-3">
+  <span className="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3" />
+</div>
+
+<div className="input-group mb-3">
+  <span className="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
+  <span className="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" />
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Server" aria-label="Server" />
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">With textarea</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
     </div>
   );
 }
